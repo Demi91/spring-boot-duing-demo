@@ -1,0 +1,35 @@
+#server:
+#  port: 8090
+
+
+# 建议使用清晰的结构
+food:
+  meat: 烤肉
+  rice: 拌饭
+  sauce:
+      - 咖喱
+      - 蜜汁
+      - 原味
+
+#流式语法
+#food: {meat: 烤肉,rice: 拌饭}
+
+spring:
+  profiles:
+    active: prod
+
+---
+#开发环境
+spring:
+  profiles: dev
+
+server:
+  port: 8090
+
+---
+#生产环境
+spring:
+  profiles: prod
+
+server:
+  port: 8010

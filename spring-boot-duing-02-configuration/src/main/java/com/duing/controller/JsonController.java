@@ -1,7 +1,9 @@
 package com.duing.controller;
 
 import com.duing.bean.Food;
+import com.duing.bean.Vegetables;
 import com.duing.config.FoodConfig;
+import com.duing.config.VegetablesConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -34,6 +36,19 @@ public class JsonController {
         Food food = new Food();
         food.setMeat(foodConfig.getMeat());
         food.setRice(foodConfig.getRice());
+        food.setSauce(foodConfig.getSauce());
         return food;
+    }
+
+    @Autowired
+    private VegetablesConfig  vegetablesConfig;
+
+    @RequestMapping("/vegetables")
+    public Vegetables vegetables(){
+        Vegetables vegetables = new Vegetables();
+        vegetables.setPotato(vegetablesConfig.getPotato());
+        vegetables.setEggplant(vegetablesConfig.getEggplant());
+        vegetables.setGreenpeper(vegetablesConfig.getGreenpeper());
+        return vegetables;
     }
 }
