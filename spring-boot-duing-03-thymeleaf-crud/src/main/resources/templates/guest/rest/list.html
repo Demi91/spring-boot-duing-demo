@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Restful Guest List</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}">
+</head>
+<body>
+<h1>中餐厅第三季嘉宾列表</h1>
+<br/><br/>
+<div class="with:80%">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Role</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr  th:each="guest : ${guests}">
+            <!--scope="row"-->
+            <td th:text="${guest.name}">name</td>
+            <td th:text="${guest.role}">role</td>
+            <td><a th:href="@{/guest/rest/}+${guest.name}">edit</a></td>
+            <td>
+                <button th:attr="del_url=@{/guest/rest/}+${guest.name}" name="del_button">delete</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="form-group">
+    <div class="col-sm-2 control-label">
+        <a href="/guest/rest/toAdd" th:href="@{/guest/rest/toAdd}" class="btn btn-info">add</a>
+    </div>
+</div>
+
+<form method="post" id="form_delete">
+    <input type="hidden" name="_method" value="delete"/>
+</form>
+
+<script type="text/javascript" th:src="@{/webjars/jquery/3.4.1/jquery.js}"></script>
+<script>
+    $(function(){
+       $("button[name='del_button']").click(function () {
+           $("#form_delete").prop("action",$(this).attr("del_url")).submit();
+       });
+    });
+</script>
+
+</body>
+</html>
