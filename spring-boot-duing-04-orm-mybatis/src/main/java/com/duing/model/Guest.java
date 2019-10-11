@@ -6,7 +6,9 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
-@Data@AllArgsConstructor@NoArgsConstructor
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Guest implements Serializable {
 
     private Long id;

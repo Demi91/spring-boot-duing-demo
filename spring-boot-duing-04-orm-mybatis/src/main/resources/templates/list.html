@@ -17,7 +17,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr  th:each="guest : ${guests}">
+        <tr th:each="guest : ${guests}">
             <!--scope="row"-->
             <td th:text="${guest.name}">name</td>
             <td th:text="${guest.role}">role</td>
