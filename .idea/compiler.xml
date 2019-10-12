@@ -11,7 +11,6 @@
         <module name="spring-boot-duing-02-configuration" />
         <module name="spring-boot-duing-03-template" />
         <module name="spring-boot-duing-03-thymeleaf-crud" />
-        <module name="spring-boot-duing-04-orm" />
         <module name="spring-boot-duing-04-orm-jpa" />
         <module name="spring-boot-duing-04-orm-mybatis" />
       </profile>
