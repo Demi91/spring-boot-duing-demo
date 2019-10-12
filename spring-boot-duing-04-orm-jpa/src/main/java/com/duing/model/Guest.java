@@ -10,7 +10,9 @@ import javax.persistence.Id;
 import java.io.Serializable;
 
 @Entity
-@Data@AllArgsConstructor@NoArgsConstructor
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Guest implements Serializable {
 
     @Id
