@@ -13,6 +13,7 @@
         <module name="spring-boot-duing-03-thymeleaf-crud" />
         <module name="spring-boot-duing-04-orm-jpa" />
         <module name="spring-boot-duing-04-orm-mybatis" />
+        <module name="spring-boot-duing-04-orm-mybatis-plus" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -23,6 +24,7 @@
       <module name="spring-boot-duing-04-orm" target="1.8" />
       <module name="spring-boot-duing-04-orm-jpa" target="1.8" />
       <module name="spring-boot-duing-04-orm-mybatis" target="1.8" />
+      <module name="spring-boot-duing-04-orm-mybatis-plus" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

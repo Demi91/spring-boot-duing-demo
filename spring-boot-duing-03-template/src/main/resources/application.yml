@@ -9,5 +9,4 @@ server:
 #      prefix: /templates/
 #      #文件后缀
 #      suffix: .ftl
-
-
+debug: true
