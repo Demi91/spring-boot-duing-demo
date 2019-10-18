@@ -16,6 +16,7 @@
         <module name="spring-boot-duing-04-orm-mybatis-plus" />
         <module name="spring-boot-duing-05-event-listener" />
         <module name="spring-boot-duing-05-war" />
+        <module name="spring-boot-duing-06-servlet" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -29,6 +30,7 @@
       <module name="spring-boot-duing-04-orm-mybatis-plus" target="1.8" />
       <module name="spring-boot-duing-05-event-listener" target="1.8" />
       <module name="spring-boot-duing-05-war" target="1.8" />
+      <module name="spring-boot-duing-06-servlet" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
