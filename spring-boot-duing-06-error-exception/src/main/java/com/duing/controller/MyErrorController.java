@@ -10,4 +10,10 @@ public class MyErrorController {
     public String error404(){
         return "error404";
     }
+
+
+    @RequestMapping("/testError")
+    public String error() throws Exception{
+        throw new Exception("测试异常");
+    }
 }
