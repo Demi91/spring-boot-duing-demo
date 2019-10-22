@@ -8,7 +8,7 @@ import javax.validation.constraints.NotBlank;
 @Data @AllArgsConstructor
 public class Guest {
 
-    @NotBlank(message = "嘉宾名字不能为空")
+    @NotBlank(message = "{guest.name.notblank}")
     private String name;
     @NotBlank
     private String role;
