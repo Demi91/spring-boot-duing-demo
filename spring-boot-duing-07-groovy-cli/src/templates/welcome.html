@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+
+    <script src="webjars/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+           $('p').animate({
+               fontSize: '50px'
+           },'slow');
+        });
+    </script>
+</head>
+<body>
+
+<p th:text="${name}">name</p>
+</body>
+</html>
