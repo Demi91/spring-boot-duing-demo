@@ -2,6 +2,15 @@
 #  port: 8090
 
 
+jasypt:
+  encryptor:
+    password: 123456!@#
+
+info:
+  username: ENC(Mru5gwjAluKSCxkLxdGIKw==)
+  password: ENC(A1+yAABwLTuA5ynz7zUKLQ==)
+
+
 # 建议使用清晰的结构
 food:
   meat: 烤肉

@@ -28,6 +28,11 @@ public class JsonController {
 //    @Value("${food.meat}")
 //    private String meat;
 
+    @Value("${info.username}")
+    private String username;
+    @Value("${info.password}")
+    private String password;
+
     @Autowired
     private FoodConfig foodConfig;
 
@@ -38,6 +43,15 @@ public class JsonController {
         food.setRice(foodConfig.getRice());
         food.setSauce(foodConfig.getSauce());
         return food;
+    }
+
+    @RequestMapping("/jasypt")
+    public String jasypt(){
+        StringBuffer stringBuffer = new StringBuffer();
+        stringBuffer.append(username);
+        stringBuffer.append("\t");
+        stringBuffer.append(password);
+        return stringBuffer.toString();
     }
 
     @Autowired
