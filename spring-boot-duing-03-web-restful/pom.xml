@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.duing</groupId>
-    <artifactId>spring-boot-duing-03-thymeleaf-crud</artifactId>
+    <artifactId>spring-boot-duing-03-web-restful</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-boot-duing-03-thymeleaf-crud</name>
+    <name>spring-boot-duing-03-web-restful</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -29,6 +29,12 @@
         </dependency>
 
         <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>jquery</artifactId>
+            <version>3.4.1</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
@@ -43,6 +49,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.junit.vintage</groupId>
+                    <artifactId>junit-vintage-engine</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 
