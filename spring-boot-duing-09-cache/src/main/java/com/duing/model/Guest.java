@@ -12,6 +12,7 @@ import java.io.Serializable;
 public class Guest implements Serializable {
 
     private static final long serialVersionUID = -9214582588351579637L;
+
     private Integer id;
     private String name;
     private String role;

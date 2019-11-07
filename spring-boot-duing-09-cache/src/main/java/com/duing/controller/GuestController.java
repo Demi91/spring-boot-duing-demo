@@ -28,4 +28,22 @@ public class GuestController {
         return guest;
     }
 
+    @GetMapping("/update")
+    public Guest updateGuest(Integer id, String name, String role) {
+        Guest newGuest = new Guest(id, name, role);
+        guestService.updateGuest(newGuest);
+        return newGuest;
+    }
+
+    @GetMapping("/delete/{id}")
+    public String deleteGuest(@PathVariable(name = "id") int id) {
+        if (id != 0) {
+            guestService.deleteGuest(id);
+        } else {
+            guestService.deleteAllGuest();
+        }
+        return "Success";
+    }
+
+
 }
