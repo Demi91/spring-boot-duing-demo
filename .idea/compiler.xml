@@ -19,6 +19,7 @@
         <module name="spring-boot-duing-05-war" />
         <module name="spring-boot-duing-05-web-container" />
         <module name="spring-boot-duing-06-servlet" />
+        <module name="spring-boot-duing-09-cache" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -35,6 +36,7 @@
       <module name="spring-boot-duing-05-war" target="1.8" />
       <module name="spring-boot-duing-05-web-container" target="1.8" />
       <module name="spring-boot-duing-06-servlet" target="1.8" />
+      <module name="spring-boot-duing-09-cache" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
