@@ -1,13 +1,13 @@
-package com.duing.springbootduing08actuator;
+package com.duing;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootDuing08ActuatorApplication {
+public class SpringBootDuing06SwaggerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootDuing08ActuatorApplication.class, args);
+        SpringApplication.run(SpringBootDuing06SwaggerApplication.class, args);
     }
 
 }
